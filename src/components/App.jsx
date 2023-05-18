@@ -14,7 +14,7 @@ setname(event.target.value);
       <h1>Enter Your Name:</h1>
 
       <input type="text" value={name} onChange={handleOnchange}/>
-      {name? <p>Hello,{name}!</p>:null}
+      <p>{name && `Hello ${name}!`}</p>
     </div>
   )
 }
